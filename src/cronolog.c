@@ -209,7 +209,7 @@ main(int argc, char **argv)
 	case 'P':
 	    if (linkname == NULL)
 	    {
-		fprintf(stderr, "%s: A current log symlink is needed to maintain a symlink to the previous log\n", argv[0]);
+		fprintf(stderr, "A current log symlink is needed to maintain a symlink to the previous log\n");
 		exit(1);
 	    }
 	    prevlinkname = optarg;
@@ -297,7 +297,7 @@ main(int argc, char **argv)
 	if (   (period_delay_units > periodicity)
 	    || (   period_delay_units == periodicity
 		&& abs(period_delay)  >= period_multiple)) {
-	    fprintf(stderr, "%s: period delay cannot be larger than the rollover period (%s)\n", argv[0], start_time);
+	    fprintf(stderr, "%s: period delay cannot be larger than the rollover period\n", argv[0]);
 	    exit(1);
 	}		
 	period_delay *= period_seconds[period_delay_units];
