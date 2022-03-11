@@ -1,4 +1,4 @@
-CRONOLOG version 1.6.3
+CRONOLOG version 1.6.4
 
 "cronolog" is a simple program that reads log messages from its input
 and writes them to a set of output files, the names of which are
@@ -89,6 +89,13 @@ with the standard sequence:
 
 	./configure
 	make
+
+If you have issues with aclocal versions try running this first:
+
+	aclocal
+	autoconf -i -f
+	automake --add-missing
+	autoreconf
 
 To install type "make install" or simply copy the executable
 "src/cronolog" to a suitable directory.

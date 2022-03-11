@@ -25,7 +25,7 @@ dnl
 
 AC_REVISION($Id: configure.ac 1671 2003-07-05 07:19:51Z andrew $)
 
-AC_INIT([cronolog],[1.6.3],[A.Ford@ford-mason.co.uk])
+AC_INIT([cronolog],[1.6.4],[A.Ford@ford-mason.co.uk])
 AC_SUBST([PACKAGE_NAME])dnl
 AC_CONFIG_SRCDIR([configure.ac])
 AC_CONFIG_HEADERS(config.h)
