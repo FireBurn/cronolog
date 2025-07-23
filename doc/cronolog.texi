@@ -33,7 +33,7 @@ END-INFO-DIR-ENTRY
 @end tex
 
 @vskip 0pt plus 1filll
-Copyright @copyright{} 1997 Ford @& Mason Ltd
+Copyright (C) 1997 Ford & Mason Ltd
 
 Permission is granted to make and distribute verbatim copies of
 this manual provided the copyright notice and this permission notice
@@ -50,7 +50,7 @@ into another language, under the above conditions for modified versions.
 @end titlepage
 
 @ifinfo
-Copyright @copyright{} 1997 Ford & Mason Ltd.
+Copyright (C) 1997 Ford & Mason Ltd
 
 Permission is granted to make and distribute verbatim copies of
 this manual provided the copyright notice and this permission notice
