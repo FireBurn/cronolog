@@ -1,9 +1,11 @@
 ## Process this file with automake to create Makefile.in
 
-info_TEXINFOS = cronolog.texi
 man_MANS = cronolog.1m cronosplit.1m
+info_TEXINFOS = cronolog.texi
+EXTRA_DIST = $(man_MANS)
 
-# This shouldn't be necessary
- 
-EXTRA_DIST = $(man_MANS) $(info_TEXINFOS)
-
+if BUILD_INFO
+INFO_DEPS = cronolog.info
+else
+INFO_DEPS =
+endif

@@ -3,5 +3,12 @@
 
 AUTOMAKE_OPTIONS  = gnu dejagnu
 EXTRA_DIST        = cronolog.spec
-SUBDIRS           = lib src doc testsuite
 
+if BUILD_DOCS
+DOC_SUBDIR = doc
+endif
+
+SUBDIRS           = lib src $(DOC_SUBDIR) testsuite
+
+# DIST_SUBDIRS ensures 'make dist' still knows about the doc folder
+DIST_SUBDIRS      = lib src doc testsuite
